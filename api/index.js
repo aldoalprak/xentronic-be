@@ -1,4 +1,5 @@
 const Home = require('./handlers/home');
+const productHandler = require('./handlers/product');
 
 module.exports = {
   name: 'xentronic-be',
@@ -6,6 +7,9 @@ module.exports = {
     const routes = [
       {
         method: 'GET', path: '/', config: Home.hello,
+      },
+      {
+        method: 'GET', path: '/product/getByQuery', config: productHandler.getByQuery,
       },
     ];
     routes.forEach((route) => server.route(route));
