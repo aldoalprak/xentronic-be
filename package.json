@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "aldo",
@@ -18,6 +19,7 @@
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.4",
     "pg": "^8.3.0",
     "sequelize": "^6.3.4",
     "sequelize-cli": "^6.2.0"
