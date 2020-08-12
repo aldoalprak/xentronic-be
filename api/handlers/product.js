@@ -4,6 +4,10 @@ module.exports.getAll = {
   handler: productController.getAll
 }
 
-module.exports.getByCategory = {
-  handler: productController.getByCategory
+module.exports.getByQuery = {
+  handler: productController.getByQuery
+}
+
+module.exports.getById = {
+  handler: productController.getById
 }

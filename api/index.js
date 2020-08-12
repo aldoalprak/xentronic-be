@@ -16,7 +16,10 @@ module.exports = {
         method: 'GET', path: '/product/getAll', config: productHandler.getAll,
       },
       {
-        method: 'GET', path: '/product/getByCategory', config: productHandler.getByCategory
+        method: 'GET', path: '/product/getById/{id}', config: productHandler.getById,
+      },
+      {
+        method: 'GET', path: '/product/getByQuery', config: productHandler.getByQuery
       }
     ];
     routes.forEach((route) => server.route(route));
